@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="unit.css">
+    <script src="unit.js"></script>
+</head>
+<body >
+    
+    <div class="container">
+        <h2>Temperature converter</h2>
+        
+        <div class="input-group">
+            <label for="inp_type">Input Unit:</label>
+            <select id="inp_type">
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="celsius">Celsius</option>
+            <option value="kelvin">kelvin</option>
+            </select>
+        </div> 
+        <div class="input-group">
+            <label for="degrees">Degrees:</label>
+            <input type="number" id="degrees" value="72" />
+        </div>
+    
+        <div class="input-group">
+            <label for="out_type">Output Unit:</label>
+            <select id="out_type">
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="celsius">Celsius</option>
+            <option value="kelvin">kelvin</option>
+            </select>
+        </div>
+    
+        <button onclick="convertTemperature()">Convert</button>
+    
+        <div class="result" id="result">72.0000°F</div>
+    </div>
+</body>
+</html>
